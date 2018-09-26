@@ -284,8 +284,10 @@ export default {
               nativeOnKeyup={ this.handleKeyup }
               onChange={ this.handleChange }
               onFocus={ this.handleFocus }
-              onBlur={ this.handleBlur }/>
+              onBlur={ this.handleBlur }
+            />
             { this.t('el.pagination.pageClassifier') }
+            <el-button onClick={ this.handleBlur } type="info" size="mini" plain>确定</el-button>
           </span>
         );
       }
